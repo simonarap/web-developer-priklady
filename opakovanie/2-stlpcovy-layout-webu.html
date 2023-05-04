@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Dvojstĺpcový layout webu - opakovanie</title>
+    <style>
+    .hlavny {
+        display: flex;
+        flex-direction: column;
+        background-color: lightskyblue;
+        padding: 50px;
+    }
+    .hlavicka {
+        background-color: turquoise;
+        height: 100px;
+    }
+    .patka {
+        background-color: turquoise;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .telo {
+        /*background-color: red;*/
+        display: flex;
+        flex-direction: row;
+    }
+    .lavy {
+        background-color: lightgreen;
+        width: 30%;
+        height: 500px;
+        margin-top: 20px;
+    }
+   .pravy {
+        background-color: orange;
+        width: 70%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+   .prvyobrazok {
+       flex-direction: row;
+       text-align: center;
+
+       text-align: left;
+       margin-left: -650px;
+                }
+
+    </style>
+
+</head>
+<body>
+    <div class="hlavny">
+        <header class="hlavicka">Nejaká hlavička</header>
+    <div class="telo">
+        <div class="lavy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat massa id placerat auctor. Curabitur sagittis est tellus, a interdum metus congue pulvinar. Sed tincidunt urna eget orci placerat, ut imperdiet purus semper. Mauris eu nisi nec mauris pharetra porta posuere et leo. Proin tincidunt mattis odio, quis faucibus enim posuere eget. Etiam maximus consectetur ex in lacinia. Etiam luctus nisl vel sapien ornare laoreet.</div>
+        <div class="pravy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat massa id placerat auctor. Curabitur sagittis est tellus, a interdum metus congue pulvinar. Sed tincidunt urna eget orci placerat, ut imperdiet purus semper. Mauris eu nisi nec mauris pharetra porta posuere et leo. Proin tincidunt mattis odio, quis faucibus enim posuere eget.</div>
+            <div class="prvyobrazok"><img src="SVKvlajka.jpg" width="20%" height="20%"></div>
+
+        </div>
+    </div>
+        <footer class="patka">Nejaká pätka</footer>
+    </div>
+
+</body>
+</html>
