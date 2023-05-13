@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Jednosĺpcový responzívny layout webu - opakovanie</title>
+    <link rel="stylesheet" href="css/media-uloha.css">
+    <link rel="stylesheet" href="css/responzivny-template-uloha.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet">
+
+</head>
+<body>
+<div class="hlavny">
+    <header class="hlavicka">
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#modely">Modely</a>
+            <a href="#promoakcie">Promo akcie</a>
+            <a href="#prislusenstvo">Príslušenstvo</a>
+            <a href="#kontaktujtenas">Kontaktujte nás</a>
+            <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div class="telo">
+        <div class="lavy">
+            <div class="lavy-horny">
+                <iframe width="700" height="380" src="https://www.youtube.com/embed/QmLZqCwfL68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="lavy-dolny"><p style="font-weight: bold;font-size: 26px; line-height: 0px; /*margin: 0;*/ margin-left: 20px;padding-top: 50px;">Tuono 660 Factory</p>
+                                    <p style="font-weight: bold;font-size: 16px; line-height: 10px; margin: 2; margin-left: 20px;">Maximálne funkcie a výkon</p>
+                <p style="padding-left: 20px; padding-right: 20px;line-height: 20px; margin: 3; margin-left: 10px;">Model Tuono 660 Factory s kompletne nastaviteľným odpružením, komplexným balíčkom elektroniky a výkonom 100 koní je určený pre jazdcov, ktorí vyžadujú len to najlepšie. Tento motocykel prináša zážitok z jazdy, ktorá je vzrušujúcejšia než kedykoľvek predtým. Dravý a nekompromisný charakter vyjadrujú jeho kompaktné rozmery, prepracovaný podvozok a nová čierna farba Aprilia. Ak chceš posunúť výkon na maximum, tento motocykel je presne pre teba.</p></div>
+
+        </div>
+        <div class="pravy">
+            <div class="pravy-horny"><p style="font-weight: bold;font-size: 26px; line-height: 0px; /*margin: 0;*/ margin-left: 20px;padding-top: 50px;">Tuono 660</p>
+                                     <p style="font-weight: bold;font-size: 16px; line-height: 10px; margin: 2; margin-left: 20px;">Silné ako hrom, ľahké ako obláčik</p>
+                                     <p style="padding-left: 20px; padding-right: 20px;line-height: 20px; margin: 3; margin-left: 10px;">Spojením legendárneho modelu Tuono V4 1100 a najmodernejšej technológie modelu RS 660 vzniklo niečo výnimočné. Tuono 660, úžasný motocykel, ktorý je predurčený zmeniť tvoj pohľad na svet.</p></div>
+            <div class="pravy-dolny">
+                <img src="images-ulohy/aprilia-tuono-660.jpg" alt="Aprilia Tuono 660" width="700" height="450">
+
+
+
+                <p>Pravý dolný</p></div>
+        </div>
+    </div>
+    <div class="nad-patkou">
+        <div class="nad-patkou-lavy"><p>Nad pätkou ľavý</p></div>
+        <div class="nad-patkou-pravy"><p>Nad pätkou pravý</p></div>
+    </div>
+    <footer class="patka"><p>Pätka</p></footer>
+</div>
+<!-- TODO Doplnte menu do Hlavicka, prip. farebne upravte -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

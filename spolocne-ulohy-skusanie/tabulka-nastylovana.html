@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Naštýlovaná tabuľka</title>
+
+  <style>
+    .styled-table {
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      font-family: sans-serif;
+      font-size: 0.9em;
+      text-align: left;
+      margin: 20px;
+      padding: 5px;
+      width: 400px;
+      box-shadow: 3px 3px 8px rgb(155, 155, 155, 100);
+      /* https://cssgenerator.org/box-shadow-css-generator.html */
+    }
+    .styled-table th, .styled-table td {
+      padding: 12px 15px;
+    }
+    .styled-table tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+    .hlavicka {
+      background-color: #009879;
+      color: white;
+    }
+    .druhy-riadok {
+      background-color: whitesmoke;
+      color: #009879;
+    }
+  </style>
+
+</head>
+<body>
+  <table class="styled-table">
+    <thead>
+       <tr class="hlavicka">
+         <th>Rank</th>
+         <th>Name</th>
+         <th>Points</th>
+         <th>Team</th>
+       </tr>
+    </thead>
+
+<tbody>
+  <tr class="prvy-riadok">
+    <td>1</td>
+    <td>Domenic</td>
+    <td>88,110</td>
+    <td>dcode</td>
+  </tr>
+  <tr class="druhy-riadok">
+    <td>2</td>
+    <td>Sally</td>
+    <td>72,400</td>
+    <td>Students</td>
+  </tr>
+  <tr class="treti-riadok">
+    <td>3</td>
+    <td>Nick</td>
+    <td>52,300</td>
+    <td>dcode</td>
+  </tr>
+</tbody>
+  </table>
+
+</body>
+</html>
