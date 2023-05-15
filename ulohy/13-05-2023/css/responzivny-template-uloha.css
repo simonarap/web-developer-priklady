@@ -1,6 +1,7 @@
 body {
     margin: 0px auto;
 /*    max-width: 1200px;*/
+    max-width: 1300px;
 }
 
 div p {
@@ -9,23 +10,34 @@ div p {
 
 
 .hlavny {
-    /*background-color: #000000;*/
+/*    background-color: #000000;*/
     display: flex; /* Zobraz "obsah", teda kontajnery (div) vo vnutri vedla seba */
     flex-direction: column; /* Touto vlastnostou nastavime "obsah", ktory sa bude zobrazovat pod sebou */
     margin: 20px;
     /*    flex-wrap: wrap;*/
+    max-width: 1300px;
 }
 
 .hlavicka {
     background-color: #00d6f4;
     /*height: 50px;*/ /* Nastavili sme vysku hlavicky na 50 pixelov */
+
+}
+.logo {
+    margin-left: 10px;
+    margin-top: 9px;
+}
+.nad-telom {
+    flex-direction:column;
+    margin-top: 10px;
 }
 
 .telo {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 10px;
     /*column-gap: 5px;*/
+    max-width: 1300px;
 }
 
 .nad-patkou {
@@ -49,25 +61,28 @@ div p {
 }
 
 .lavy-horny {
-    height: 380px;
+    height: 450px;
 }
 
 .lavy-dolny {
     background-color: #d2d2d2;
-    height: 450px;
-    margin-top: -26px;
+    height: 392px;
+    width: 620px;
+    margin-top: -85px;
 }
 
 .pravy-horny {
     background-color: #d2d2d2;
-    height: 380px;
-    margin-top: -26px;
+    height: 387px;
+    margin-top: -20px;
+    margin-left: -80px;
+    width: 683px;
 }
 
 .pravy-dolny {
-    background-color: silver;
-    height: 450px;
-    margin-top: 0px;
+   /* background-color: silver;*/
+    height: 373px;
+    width: 500px;
 }
 
 .nad-patkou-lavy {
@@ -79,6 +94,25 @@ div p {
     background-color: #3a3a3a;
     flex: 1;
 }
+
+.h2 {
+    padding-top: 50px;
+    padding-left: 35px;
+}
+.h3 {
+    padding-left: 35px;
+}
+#para1, #para2 {
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+
+
+
+
+
 
 /* Ostylovane menu */
 ul {
@@ -115,7 +149,7 @@ li a:hover:not(.active) {
 }
 
 .topnav a {
-    float: left;
+    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
