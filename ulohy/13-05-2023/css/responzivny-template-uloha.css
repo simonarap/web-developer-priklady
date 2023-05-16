@@ -15,7 +15,7 @@ div p {
     flex-direction: column; /* Touto vlastnostou nastavime "obsah", ktory sa bude zobrazovat pod sebou */
     margin: 20px;
     /*    flex-wrap: wrap;*/
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 .hlavicka {
@@ -37,7 +37,7 @@ div p {
     flex-direction: row;
     margin-top: 10px;
     /*column-gap: 5px;*/
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 .nad-patkou {
@@ -68,7 +68,7 @@ div p {
 .lavy-dolny {
     background-color: #d2d2d2;
     height: 392px;
-    width: 620px;
+    width: 600px;
     margin-top: -85px;
 
 }
@@ -185,7 +185,7 @@ li a:hover:not(.active) {
     text-align: center;
     margin: 20px;
     padding: 5px;
-    width: 700px;
+    max-width: 700px;
     box-shadow: 3px 3px 8px rgb(155, 155, 155, 100);
     /* https://cssgenerator.org/box-shadow-css-generator.html */
 }
