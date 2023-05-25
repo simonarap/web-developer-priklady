@@ -1,7 +1,11 @@
 body {
+    /*
     margin: 0px auto;
+    */
 /*    max-width: 1200px;*/
-    max-width: 1300px;
+    /*
+    max-width: 1200px;
+    */
 }
 
 div p {
@@ -15,7 +19,7 @@ div p {
     flex-direction: column; /* Touto vlastnostou nastavime "obsah", ktory sa bude zobrazovat pod sebou */
     margin: 20px;
     /*    flex-wrap: wrap;*/
-    max-width: 1200px;
+/*    max-width: 1200px;*/
 }
 
 .hlavicka {
@@ -38,6 +42,7 @@ div p {
     margin-top: 10px;
     /*column-gap: 5px;*/
     max-width: 1200px;
+    flex: 1;
 }
 
 .nad-patkou {
@@ -57,49 +62,189 @@ div p {
 }
 
 .pravy {
-    flex: 2;
+    flex: 1;
+    margin-left: -50px;
 }
 
 .lavy-horny {
-    height: 450px;
-    margin-top: 5px;
-}
-
-.lavy-dolny {
-    background-color: #d2d2d2;
-    height: 392px;
-    width: 600px;
-    margin-top: -85px;
-
+    margin-top: 15px;
+    margin-left: 7%;;
+    flex: 1;
 }
 
 .pravy-horny {
-    background-color: #d2d2d2;
-    height: 387px;
-    margin-top: -15px;
-    margin-left: -30px;
-    width: 630px;
+    margin-top: 15px;
+    margin-left: 7%;
+    flex: 1;
+}
+
+.lavy-dolny {
+    margin-top: 15px;
+    margin-left: 7%;
+    flex: 1;
 }
 
 .pravy-dolny {
-   /* background-color: silver;*/
-    height: 373px;
-    width: 500px;
+    margin-top: 15px;
+    margin-left: 7%;
+    flex: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #777;
+/*    background: #4CAF50;*/
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #ff0000;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #ff0000;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
 }
 
 .nad-patkou-lavy {
-    /*background-color: #e91e63;*/
     flex: 3;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -10px;
 }
 
-.nad-patkou-pravy {
+/*.nad-patkou-pravy {
     background-color: #3a3a3a;
-    flex: 2;
-}
+    flex: 2;*/
 
-.h2 {
+/*.h2 {
     padding-top: 50px;
     padding-left: 35px;
 }
@@ -111,8 +256,7 @@ div p {
     padding-left: 35px;
     padding-right: 35px;
 
-}
-
+}*/
 
 
 
@@ -178,16 +322,14 @@ li a:hover:not(.active) {
 
 .styled-table {
     border-collapse: collapse;
-/*    border-radius: 10px;*/
+    border-radius: 2px;
     overflow: hidden;
     font-family: sans-serif;
     font-size: 0.9em;
     text-align: center;
-    margin: 20px;
-    padding: 5px;
-    max-width: 700px;
+    padding: 10px;
     box-shadow: 3px 3px 8px rgb(155, 155, 155, 100);
-    /* https://cssgenerator.org/box-shadow-css-generator.html */
+    width: 100%;
 }
 .styled-table th, .styled-table td {
     padding: 12px 15px;
@@ -204,6 +346,7 @@ td {
     background-color: whitesmoke;
     color: black;
 }
-.siesty-riadok {
+.druhy-riadok {
     font-weight: bold;
 }
+
