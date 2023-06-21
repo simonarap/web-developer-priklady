@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .img-container {
+      width: 100%;
+      max-height: 100%;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.25s;
+    }
+
+    .img-container:hover img {
+      transform: scale(1.2);
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <div class="img-container">
+    <img alt="City" src="city-g5acc639ed_1920.jpg">
+  </div>
+  <div class="img-container">
+    <img alt="Hong Kong" src="hong-kong-g34545e0da_1920.jpg">
+  </div>
+  <div class="img-container">
+    <img alt="Fireworks" src="fireworks-g7d1f2eaa6_1920.jpg">
+  </div>
+  <div class="img-container">
+    <img alt="Road" src="road-g505e67d31_1920.jpg">
+  </div>
+  <div class="img-container">
+    <img alt="Japan" src="japan-ga23f97efb_1920.jpg">
+  </div>
+</section>
+</body>
+</html>

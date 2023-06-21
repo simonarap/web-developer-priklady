@@ -18,6 +18,8 @@ div p {
 .hlavicka {
     background-color: #00d6f4;
     /*height: 50px;*/ /* Nastavili sme vysku hlavicky na 50 pixelov */
+    position: sticky;
+    top: 0px;
 }
 
 .telo {
@@ -78,6 +80,7 @@ div p {
 .nad-patkou-pravy {
     background-color: #3a3a3a;
     flex: 1;
+    margin-left: 20px;
 }
 
 /* Ostylovane menu */

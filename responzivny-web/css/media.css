@@ -26,9 +26,8 @@
         text-align: left;
     }
 }
-@media screen and (max-width: 600px) {
-    .telo, .nad-patkou {
-        flex-direction: column;
-    }
+body {
+    margin: 0px auto;
+    max-width: 1200px;
 }
 
